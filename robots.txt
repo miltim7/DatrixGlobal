@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://datrix.kz/sitemap.xml
+Sitemap: https://datrixpro.ae/sitemap.xml
