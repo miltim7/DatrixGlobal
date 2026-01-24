@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terms & Conditions - DATRIX</title>
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="stylesheet" href="assets/css/globals.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/solution-section/solution-section.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0A0A0A">
+  <style>
+      /* Дополнительные стили только для списка, чтобы он читался */
+      .terms-list {
+          list-style: none;
+          padding: 0;
+          margin-top: 30px;
+      }
+      .terms-list li {
+          position: relative;
+          padding-left: 20px;
+          margin-bottom: 15px;
+          color: rgba(255, 255, 255, 0.8);
+          line-height: 1.6;
+      }
+      .terms-list li::before {
+          content: "•";
+          position: absolute;
+          left: 0;
+          color: #fff; /* Или акцентный цвет сайта, если есть */
+      }
+      .back-btn {
+          display: inline-block;
+          margin-bottom: 30px;
+          color: rgba(255, 255, 255, 0.6);
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.3s;
+      }
+      .back-btn:hover {
+          color: #fff;
+      }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo" id="header-logo-link">
+        <span class="header__logo-text">DATRIX</span>
+      </a>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="index.html#contacts" class="header__menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="solution-section solution-section--black" style="min-height: 80vh; padding-top: 150px;">
+    <div class="container">
+      <div class="solution-section__content" style="text-align: left; max-width: 800px; margin: 0 auto;">
+        
+        <a href="index.html" class="back-btn" id="back-link">← Back to Home</a>
+
+        <h1 class="solution-section__title" style="text-align: left;">Terms & Conditions</h1>
+
+        <ul class="terms-list">
+            <li>The website content is for general information and does not constitute a binding offer.</li>
+            <li>Equipment supply is provided under a separate Sales Contract/Tax Invoice.</li>
+            <li>Design, installation, commissioning and maintenance (if requested) are provided under a separate Service Agreement/SOW.</li>
+            <li>Such services may be delivered by certified third-party partners engaged for the project.</li>
+            <li>Scope, timelines, responsibilities and warranties are defined in the applicable contract documents.</li>
+            <li>Project delivery may be subject to site conditions and relevant authority approvals where applicable.</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__left">
+          <a href="/" class="footer__logo">DATRIX</a>
+        </div>
+
+        <div class="footer__right">
+          <p class="footer__copy">&copy; 2025 DATRIX. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const backLink = document.getElementById('back-link');
+          const logoLink = document.getElementById('header-logo-link');
+          
+          // Логика возврата на правильную языковую версию
+          if (document.referrer && document.referrer.includes('/ar')) {
+              const arPath = 'ar/index.html';
+              backLink.href = arPath;
+              logoLink.href = arPath;
+          } else {
+              const enPath = 'index.html';
+              backLink.href = enPath;
+              logoLink.href = enPath;
+          }
+      });
+  </script>
+</body>
+
+</html>
