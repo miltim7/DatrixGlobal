@@ -1,4 +1,3 @@
-<!-- ar/index.html -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
@@ -7,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>DATRIX - مراكز بيانات معيارية وحاوية | مراكز بيانات بنظام تسليم المفتاح</title>
-  
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17918223703"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -143,7 +141,7 @@
         </p>
 
         <div class="hero__actions">
-          <a href="#contacts" class="btn btn-primary">تواصل معنا</a>
+          <button class="btn btn-primary">تواصل معنا</button>
         </div>
       </div>
     </div>
@@ -265,7 +263,7 @@
           <div class="solution-section__advantage">
             <h4 class="solution-section__advantage-title">قابلية التوسع:</h4>
             <p class="solution-section__advantage-text">
-              يتم زيادة السعة بسهولة عن طريق إضافة حاويات جديدة مع نمو حمل تكنولوجيا المعلومات.
+              يتم زيادة السعة بسهولة عن طريق إضافة حاويات جديدة مع نمو الحمل تكنولوجيا المعلومات.
             </p>
           </div>
 

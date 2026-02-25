@@ -1,12 +1,11 @@
 /* components/contacts/contacts.css */
-
 .contacts {
   padding: 120px 0;
   background: var(--black);
   position: relative;
+  overflow: hidden;
 }
 
-/* Subtle gradient overlay при наведении */
 .contacts::before {
   content: '';
   position: absolute;
@@ -38,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
 }
 
 .contacts__title {
@@ -73,6 +73,7 @@
   flex-direction: column;
   gap: 32px;
   margin-top: 16px;
+  width: 100%;
 }
 
 .contacts__item {
@@ -86,9 +87,9 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-/* Разные оттенки для визуального разделения */
 .contacts__item:nth-child(1) {
   background: rgba(255, 255, 255, 0.02);
 }
@@ -171,6 +172,7 @@
   flex: 1;
   position: relative;
   z-index: 1;
+  min-width: 0;
 }
 
 .contacts__item-title {
@@ -196,6 +198,9 @@
   transition: all 0.3s ease;
   position: relative;
   width: fit-content;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contacts__item-link::after {
@@ -225,6 +230,8 @@
   color: var(--white);
   margin: 0;
   transition: all 0.3s ease;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contacts__item:hover .contacts__item-text {
@@ -342,6 +349,7 @@
   .contacts__map {
     position: static;
     min-height: 350px;
+    max-width: 100%;
   }
 
   .contacts__map-iframe {

@@ -1,5 +1,4 @@
 /* components/hero/hero.css */
-
 .hero {
   min-height: 75vh;
   display: flex;
@@ -17,9 +16,11 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  
-  /* Анимация появления фона - УСКОРЕНО */
   animation: fadeIn 0.8s ease-out;
+}
+
+[dir="rtl"] .hero__bg {
+  transform: scaleX(-1);
 }
 
 @keyframes fadeIn {
@@ -37,8 +38,6 @@
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
-  
-  /* Эффект zoom-out при загрузке - УСКОРЕНО */
   animation: zoomOut 1s ease-out;
 }
 
@@ -63,8 +62,6 @@
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0.7) 100%);
   transition: background 0.5s ease;
-  
-  /* Анимация появления overlay - УСКОРЕНО */
   animation: fadeIn 0.6s ease-out 0.2s both;
 }
 
@@ -104,8 +101,6 @@
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border: 1px solid transparent;
-  
-  /* Анимация появления label - УСКОРЕНО */
   animation: fadeInRight 0.5s ease-out 0.4s both;
 }
 
@@ -134,8 +129,6 @@
   margin: 0;
   letter-spacing: -1.5px;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
-  
-  /* Анимация появления заголовка - УСКОРЕНО */
   animation: fadeInUp 0.6s ease-out 0.5s both;
 }
 
@@ -163,8 +156,6 @@
   margin: 0;
   max-width: 550px;
   transition: color 0.3s ease, transform 0.3s ease;
-  
-  /* Анимация появления описания - УСКОРЕНО */
   animation: fadeInUp 0.6s ease-out 0.65s both;
 }
 
@@ -178,8 +169,6 @@
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  
-  /* Анимация появления features - УСКОРЕНО */
   animation: fadeInUp 0.6s ease-out 0.8s both;
 }
 
@@ -224,8 +213,6 @@
   align-items: center;
   gap: 16px;
   margin-top: 8px;
-  
-  /* Анимация появления кнопок - УСКОРЕНО */
   animation: fadeInUp 0.6s ease-out 0.95s both;
 }
 
@@ -241,8 +228,6 @@
   z-index: 2;
   cursor: pointer;
   transition: all 0.3s ease;
-  
-  /* Анимация появления scroll indicator - УСКОРЕНО */
   animation: fadeInUp 0.6s ease-out 1.1s both;
 }
 
@@ -329,6 +314,10 @@
     max-width: 650px;
     gap: 24px;
   }
+  
+  .hero__scroll {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -373,10 +362,6 @@
   
   .btn {
     width: 100%;
-  }
-
-  .hero__scroll {
-    bottom: 20px;
   }
 }
 
